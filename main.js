@@ -17,7 +17,10 @@ const { createApp } = Vue
                     console.log(result.data.response)
     
                     if (this.list.length < 10) {
-                        this.list.push(result.data.response)
+                        this.list.push(result.data.response);
+
+                        //condizionale per stampare una volta che le mail sono 10
+                        
                     }
                     console.log(this.list)
     
