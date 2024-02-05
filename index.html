@@ -17,7 +17,9 @@
         <h1>Lista mail</h1>
             <button @click='pushMail'>Genera la lista mail</button>
 
-
+        <ul>
+            <li v-for="email in list" :key="email">{{ email }}</li>
+        </ul>
 
     </div>
 
